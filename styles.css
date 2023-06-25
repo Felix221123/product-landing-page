@@ -1,0 +1,332 @@
+@import url(https://fonts.google.com/specimen/Baskervville?preview.text=original&preview.text_type=custom&query=Baskervville);
+@import url(https://fonts.google.com/specimen/Lato?preview.text=$1200&preview.text_type=custom&query=Lato);
+@import url(https://fonts.google.com/specimen/Inter?preview.text=%0APremium%20Materials&preview.text_type=custom&query=Inter);
+@import url(https://fonts.google.com/specimen/Poppins?preview.text=%0APremium%20Materials&preview.text_type=custom&query=poppins);
+
+:root{
+    --services-font:"Lato", sans-serif;
+    --company-name-font:"Baskervville", serif;
+    --plan-prices-font:"Inter" , sans-serif;
+    --nav-font:"poppins", sans-serif;
+    --heading-color-text:rgb(62, 60, 60);
+    --button-color:rgb(196, 185, 228);
+    --button-hover:
+    linear-gradient(
+        90deg,
+        rgb(62, 50, 97) 20%, 
+        rgb(35, 31, 47) 30%
+    );
+}
+
+
+html{
+    font-size:70%;
+    scroll-behavior: smooth;
+}
+
+*,::before ,::after{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+header{
+    display:flex;
+    position: fixed;
+    background-color: whitesmoke;
+    left: 0;
+    top:0;
+    width:100%;
+    height:10%;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+h1{
+    display: flex;
+    place-items: center;
+    text-align: center;
+    /* background-color: black; */
+    
+}
+
+h1 img.heading-img{
+    display: inline-flexbox;
+    margin-right:10px;
+}
+
+.heading-title{
+    font-family: var(--company-name-font);
+    font-style:oblique;
+    font-size: 2.6rem;
+    color:var(--heading-color-text);
+    font-weight:540;
+    letter-spacing: 5px;
+}
+
+#nav-bar{
+    display: flex;
+    place-items: center;
+}
+
+#nav-bar ul{
+    list-style: none;
+    margin:0;
+    padding: 0;
+    display: flex; 
+    justify-content: space-around; 
+}
+
+#nav-bar ul li {
+    display:flex;
+    justify-content: space-around;
+    /* background-color: black; */
+    
+}
+
+
+
+#nav-bar li a {
+    text-decoration: none;
+    color: var(--heading-color-text);
+    font-size: 1.7rem;
+    font-family: var(--nav-font);
+    text-align:right;
+    width:100%;
+    height: 100%;
+    padding:10px 20px;
+    font-weight: bolder;
+}
+
+.header-section{
+    display: block;
+    margin-top:8rem;
+    text-align: center;
+}
+
+.header-section h2{
+    font-size:2.4rem;
+    font-family: var(--nav-font);
+    font: bold;
+    font-weight:500;
+    margin-bottom: 1.5rem;
+}
+
+input[type=email]{
+    font-size: 1.6rem;
+    text-align: left;
+    padding-left:1rem;
+    padding-right:7rem;
+    padding-top:0.4rem;
+    padding-bottom: 0.4rem;
+    font-family: var(--services-font);
+    border-radius: 5px;
+    margin-bottom:1.5rem;
+    border: 2px solid #3c4349;
+    color:rgb(45, 43, 45);
+    
+}
+
+input[type=submit]{
+    font-size:1.3rem;
+    padding:0.6rem;
+    letter-spacing: 0.3rem;
+    background-color: var(--button-color);
+    font-weight: 700;
+    border: none;
+}
+
+input[type=submit]:hover{
+    background:var(--button-hover);
+    color:whitesmoke;
+    border: none;
+}
+
+section.feats{
+    margin:6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.features-lists li{
+    list-style-type:none;
+    display: block;
+    padding-bottom: 5rem;
+    
+}
+
+.features-lists li .icon-explain {
+    display: inline-block; 
+}
+
+
+
+.icon-explain {
+    padding-left:6rem ;
+    
+}
+
+.icon-explain p {
+    font-size: 1.6rem;
+    font-family: var(--services-font);
+
+}
+
+h3{
+    font-size: 2.5rem;
+    font-family: var(--services-font);
+    
+}
+
+.adjust{
+    margin-right: 3rem;
+}
+.fa-solid{
+    font-size: 6rem;
+}
+
+#how-it-works {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+#pricing{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+#pricing .price-board{
+    width:30rem;
+    height: 30rem;
+    border: 1.5px solid black;
+    margin:3rem;
+    display: block;
+    text-align: center;
+}
+
+.price-board h4{
+    font-family: var(--nav-font);
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding: 0.8rem;
+    background-color: rgb(205, 203, 203);
+}
+
+.price-board .dollar-price{
+    font-size: 2.5rem;
+    padding-top:1rem;
+    font:bold;
+    font-weight: 600;
+}
+
+.price-board article{
+    text-align: center;
+    display:block;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px auto;
+    line-height: 2.5rem;
+    font-size: 1.7rem;
+    font-family: var(--services-font);
+
+}
+
+.price-board button{
+    margin-top: 2rem;
+    font-size: 1.7rem;
+    padding:0.7rem;
+    background-color: var(--button-color);
+}
+
+.price-board button:hover{
+    background: var(--button-hover);
+    color: whitesmoke;
+}
+
+footer {
+    background-color: whitesmoke;
+    height: 13vh;
+    width: 70vw;
+    display: block;
+    align-items:center ;
+    text-align: right;
+    margin:0 auto;
+    padding-right:1.5rem;
+}
+
+.footer-access li{
+    list-style-type:none ;
+    display: inline-block;
+    font-size: 1.7rem;
+    font-family: var(--nav-font);
+    padding-right: 1rem;
+    padding-top:1.4rem;
+    text-align: right;
+}
+
+footer article{
+    font-size: 1.5rem;
+    font-weight: 100;
+    font-family: var(--nav-font);
+    padding-bottom: 1rem;
+
+}
+
+ul a{
+    text-decoration:none ;
+    color: black;
+}
+
+
+
+@media only screen and (max-width:720px){
+    header{
+        display: grid;
+        height:15vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header h1 #nav-bar{
+        display: block;
+        
+    }
+    .header-section{
+        margin-top:11rem;
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+    .features-lists li {
+        display: grid;
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .features-lists li i{
+        display: grid;
+        text-align: center;
+        margin-bottom:1rem ;
+    }
+
+    #pricing{
+        display: grid;
+    }
+
+    footer{
+        width:100%;
+    }
+
+    
+}
